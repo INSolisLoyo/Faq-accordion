@@ -1,0 +1,128 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+html {
+    font-family: "Work Sans", sans-serif;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Light-pink);
+    background-image: url('../assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+.main-container {
+    width: 90%;
+    height: auto;
+    background-color: var(--White);
+    z-index: 10;
+    border-radius: 1rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.title-container {
+    display: flex;
+    flex-basis: 0;
+    gap: 2rem;
+}
+
+.title-container .star-container {
+    width: 2.8rem;
+}
+
+.title-container .star-container img {
+    width: 100%;
+}
+
+.title-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.faqs-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.faqs-main .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--Dark-purple);
+}
+
+.faqs-main .faq-container:hover {
+    cursor: pointer;
+}
+
+.faqs-main .faq-container .faq-title-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.faqs-main .faq-container .faq-title-container p:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+
+.inactive {
+    display: none;
+}
+
+@media (min-width: 770px){
+
+    .main {
+        background-image: url('../assets/images/background-pattern-desktop.svg');
+    }
+
+    .main-container {
+        width: 40%;
+    }
+
+    .title-container .star-container {
+        width: 5rem;
+    }
+    
+    .title-container h1 {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+}
+
+
+
+
+
+
+
+
